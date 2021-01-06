@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activity.main.MainActivity">
+<data>
+    <import type="android.view.View"/>
+    <variable
+        name="mainVM"
+        type="com.test.testbareksa.activity.main.MainVM" />
+
+</data>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.tabs.TabLayout
+            android:layout_width="match_parent"
+            style="@style/TabStyle"
+            app:tabTextColor="@color/un_select_tab"
+            app:tabSelectedTextColor="@color/green2"
+            app:tabIndicator="@color/green2"
+            app:tabIndicatorHeight="3dp"
+            android:id="@+id/tab"
+            android:layout_height="wrap_content" />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+</layout>

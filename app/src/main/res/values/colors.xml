@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="green1">#668054</color>
+    <color name="green2">#4B8B26</color>
+    <color name="magenta">#725E9C</color>
+    <color name="colorPrimary">@color/green2</color>
+    <color name="colorPrimaryDark">@color/magenta</color>
+    <color name="colorAccent">@color/green1</color>
+    <color name="grey">#F5F5F5</color>
+    <color name="text">#DE000000</color>
+    <color name="text_year">#99000000</color>
+    <color name="un_select_tab">#61000000</color>
+    <color name="orange">#E84E0E</color>
+    <color name="red">#98012E</color>
+    <color name="blue">#394680</color>
+</resources>

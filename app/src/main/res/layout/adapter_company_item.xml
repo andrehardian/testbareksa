@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <import type="android.view.View" />
+        <variable
+            name="companyVM"
+            type="com.test.testbareksa.fragment.imbal.CompanyVM" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="101dp"
+        android:background="@{companyVM.background}"
+        android:layout_height="122dp"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <FrameLayout
+            android:layout_width="42dp"
+            android:layout_marginBottom="10dp"
+            android:layout_height="42dp">
+
+            <ImageView
+                android:background="@{companyVM.color}"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:textSize="14sp"
+                android:textColor="@android:color/white"
+                android:text="@{companyVM.alias}"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+        </FrameLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/detail"
+            android:text="@{companyVM.name}"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</layout>

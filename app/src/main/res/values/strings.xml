@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">TestBareksa</string>
+    <string-array name="tab_data">
+        <item>1W</item>
+        <item>1M</item>
+        <item>1Y</item>
+        <item>3Y</item>
+        <item>5Y</item>
+        <item>10Y</item>
+        <item>All</item>
+    </string-array>
+</resources>
