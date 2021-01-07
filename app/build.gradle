@@ -26,6 +26,22 @@ android {
     dataBinding {
         enabled true
     }
+
+    sourceSets {
+        main {
+            res.srcDirs = [
+                    'src/main/res/',
+                    'src/main/res/layout/activity',
+                    'src/main/res/layout/activity/layout',
+                    'src/main/res/layout/',
+                    'src/main/res/layout/adapter',
+                    'src/main/res/layout/adapter/layout',
+                    'src/main/res/layout/fragment',
+                    'src/main/res/layout/fragment/layout',
+            ]
+        }
+
+    }
 }
 
 dependencies {
