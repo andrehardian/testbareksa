@@ -22,6 +22,7 @@ class ImbalVM @Inject constructor(val utilsDummy: UtilsDummy) : ViewModel(),
     TabLayout.BaseOnTabSelectedListener<TabLayout.Tab> {
     private lateinit var context: Context
     private lateinit var dataBinding: ImbalFragmentBinding
+
     fun setChart(lineChart: LineChart) {
         val dataSets = ArrayList<ILineDataSet>()
         val labelMonth: MutableList<String> = ArrayList()
@@ -74,6 +75,7 @@ class ImbalVM @Inject constructor(val utilsDummy: UtilsDummy) : ViewModel(),
         this.dataBinding = dataBinding
         setChart(dataBinding.lineChart)
         setTab(dataBinding.tabData)
+        setupRecycler()
     }
 
     private fun setTab(tabData: TabLayout) {
@@ -87,21 +89,20 @@ class ImbalVM @Inject constructor(val utilsDummy: UtilsDummy) : ViewModel(),
 
     }
 
-    override fun onTabReselected(p0: TabLayout.Tab?) {
-        TODO("Not yet implemented")
-    }
-
-    override fun onTabUnselected(p0: TabLayout.Tab?) {
-        TODO("Not yet implemented")
-    }
-
     override fun onTabSelected(p0: TabLayout.Tab?) {
         setupRecycler()
     }
 
     private fun setupRecycler() {
-        var listData: ArrayList<ArrayList<*>> = utilsDummy.prepareDummydata(context)
+        var listData = utilsDummy.prepareDummydata(context)
         dataBinding.recycler.adapter = AdapterRecycler(listData = listData)
+    }
+
+    override fun onTabReselected(p0: TabLayout.Tab?) {
+
+    }
+
+    override fun onTabUnselected(p0: TabLayout.Tab?) {
     }
 
 

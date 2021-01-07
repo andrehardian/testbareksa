@@ -6,7 +6,7 @@
         <import type="android.view.View" />
         <variable
             name="detailVM"
-            type="com.test.testbareksa.fragment.imbal.DetailVM" />
+            type="com.test.testbareksa.fragment.imbal.viewModel.DetailVM" />
     </data>
 
     <LinearLayout

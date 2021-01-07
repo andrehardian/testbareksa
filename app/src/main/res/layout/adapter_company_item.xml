@@ -6,7 +6,7 @@
         <import type="android.view.View" />
         <variable
             name="companyVM"
-            type="com.test.testbareksa.fragment.imbal.CompanyVM" />
+            type="com.test.testbareksa.fragment.imbal.viewModel.CompanyVM" />
     </data>
 
     <LinearLayout
@@ -36,6 +36,7 @@
                 android:layout_gravity="center" />
         </FrameLayout>
         <TextView
+            android:textSize="12sp"
             android:layout_width="match_parent"
             android:id="@+id/detail"
             android:text="@{companyVM.name}"

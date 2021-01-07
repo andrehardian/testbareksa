@@ -1,4 +1,4 @@
-package com.test.testbareksa.fragment.imbal
+package com.test.testbareksa.fragment.imbal.viewModel
 
 import android.graphics.drawable.Drawable
 import androidx.databinding.ObservableField

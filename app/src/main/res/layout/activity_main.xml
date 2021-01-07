@@ -1,29 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     tools:context=".activity.main.MainActivity">
-<data>
-    <import type="android.view.View"/>
-    <variable
-        name="mainVM"
-        type="com.test.testbareksa.activity.main.MainVM" />
 
-</data>
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="mainVM"
+            type="com.test.testbareksa.activity.main.MainVM" />
+
+    </data>
+
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            app:title="@string/compare"
+            android:layout_height="wrap_content" />
 
         <com.google.android.material.tabs.TabLayout
-            android:layout_width="match_parent"
+            android:id="@+id/tab"
             style="@style/TabStyle"
-            app:tabTextColor="@color/un_select_tab"
-            app:tabSelectedTextColor="@color/green2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             app:tabIndicator="@color/green2"
             app:tabIndicatorHeight="3dp"
-            android:id="@+id/tab"
-            android:layout_height="wrap_content" />
+            app:tabSelectedTextColor="@color/green2"
+            app:tabTextColor="@color/un_select_tab" />
 
         <androidx.viewpager.widget.ViewPager
             android:id="@+id/pager"

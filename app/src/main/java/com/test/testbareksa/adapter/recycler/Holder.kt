@@ -11,11 +11,6 @@ class Holder(private val binding: ViewDataBinding) : RecyclerView.ViewHolder(bin
     private val lifecycleRegistry = LifecycleRegistry(this)
     var viewBinding = binding
 
-    fun bind() {
-        binding.executePendingBindings()
-        binding.lifecycleOwner = this
-    }
-
     init {
         lifecycleRegistry.currentState = Lifecycle.State.INITIALIZED
     }

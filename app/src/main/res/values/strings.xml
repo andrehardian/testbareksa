@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">TestBareksa</string>
+    <string name="buy">Beli</string>
+    <string name="detail">Detail</string>
+    <string name="compare">Perbandingan</string>
     <string-array name="tab_data">
         <item>1W</item>
         <item>1M</item>

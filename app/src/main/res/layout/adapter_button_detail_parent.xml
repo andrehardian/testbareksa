@@ -8,22 +8,22 @@
         <import type="android.view.View" />
 
         <variable
-            name="parentCompany"
-            type="com.test.testbareksa.fragment.imbal.viewModel.ParentCompanyVM" />
+            name="parentButtonDetail"
+            type="com.test.testbareksa.fragment.imbal.viewModel.ParentButtonDetailVM" />
     </data>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="122dp"
-         android:layout_marginBottom="20dp"
+        android:layout_height="wrap_content"
+         android:layout_marginBottom="12dp"
         android:orientation="vertical">
 
         <androidx.recyclerview.widget.RecyclerView
             android:layout_width="match_parent"
-            android:id="@+id/recycler"
+            android:id="@+id/recycler_button_detail"
             app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
             app:spanCount="3"
-            tools:listitem="@layout/adapter_company_item"
+            tools:listitem="@layout/adapter_button_detail"
             android:layout_height="wrap_content" />
     </LinearLayout>
 </layout>

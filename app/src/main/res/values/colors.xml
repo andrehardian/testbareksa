@@ -13,4 +13,8 @@
     <color name="orange">#E84E0E</color>
     <color name="red">#98012E</color>
     <color name="blue">#394680</color>
+    <color name="green50">#E2EBDD</color>
+    <color name="navy">#E0E8EE</color>
+    <color name="violet">#E0DBEB</color>
+    <color name="green_primary">#82C341</color>
 </resources>

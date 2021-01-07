@@ -17,19 +17,10 @@ class MainVM @Inject constructor() : ViewModel() {
         supportFragmentManager: FragmentManager
     ) {
         val listTab = ArrayList<ModelTab>()
-        listTab.add(makeTab("Imbal Hasil",
-            ImbalFragment()
-        ))
-        listTab.add(makeTab("Dana Kelolaan", Fragment()))
-        pager.adapter=AdapterPagerTab(supportFragmentManager,listTab)
+        listTab.add(ModelTab("Imbal Hasil", ImbalFragment()))
+        listTab.add(ModelTab("Dana Kelolaan", Fragment()))
+        pager.adapter = AdapterPagerTab(supportFragmentManager, listTab)
         tab.setupWithViewPager(pager)
-    }
-
-    private fun makeTab(title: String, fragment: Fragment): ModelTab {
-        val modelTab = ModelTab()
-        modelTab.title = title
-        modelTab.fragment = fragment
-        return modelTab
     }
 
 }
