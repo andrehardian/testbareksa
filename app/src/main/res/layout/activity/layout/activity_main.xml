@@ -32,6 +32,7 @@
             android:layout_height="wrap_content"
             app:tabIndicator="@color/green2"
             app:tabIndicatorHeight="3dp"
+            app:tabBackground="@drawable/background_tab"
             app:tabSelectedTextColor="@color/green2"
             app:tabTextColor="@color/un_select_tab" />
 

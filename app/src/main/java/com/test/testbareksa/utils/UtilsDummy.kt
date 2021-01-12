@@ -107,21 +107,21 @@ class UtilsDummy {
         listCompany.add(
             makeCompany(
                 "BNI-AM Inspiring Equity Fund",
-                ContextCompat.getDrawable(context, R.drawable.circle_orange),
+                ContextCompat.getDrawable(context, R.drawable.ic_bni),
                 listColor.get(0)
             )
         )
         listCompany.add(
             makeCompany(
                 "Cipta Dana Cash",
-                ContextCompat.getDrawable(context, R.drawable.circle_red),
+                ContextCompat.getDrawable(context, R.drawable.ic_ciptadana),
                 listColor.get(1)
             )
         )
         listCompany.add(
             makeCompany(
                 "Ascend Reksa Dana Saham Eq...",
-                ContextCompat.getDrawable(context, R.drawable.circle_blue),
+                ContextCompat.getDrawable(context, R.drawable.ic_ascend),
                 listColor.get(2)
             )
         )

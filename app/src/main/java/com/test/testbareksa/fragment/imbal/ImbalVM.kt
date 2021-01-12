@@ -32,7 +32,7 @@ class ImbalVM @Inject constructor(val utilsDummy: UtilsDummy) : ViewModel(),
         labelMonth.add("Apr 20")
         labelMonth.add("Jul 20")
 
-        dataSets.add(makeDataSet(3, ContextCompat.getColor(context, R.color.green2)))
+        dataSets.add(makeDataSet(3, ContextCompat.getColor(context, R.color.blue_soft)))
         dataSets.add(makeDataSet(2, ContextCompat.getColor(context, R.color.magenta)))
         dataSets.add(makeDataSet(1, ContextCompat.getColor(context, R.color.green1)))
 
@@ -46,8 +46,11 @@ class ImbalVM @Inject constructor(val utilsDummy: UtilsDummy) : ViewModel(),
         xAxis.granularity = 1f
         xAxis.valueFormatter = xAxisFormatter
 
+
         lineChart.setData(data)
+        lineChart.description.text = ""
         lineChart.legend.isEnabled = false
+        lineChart.axisLeft.isEnabled = false
     }
 
     private fun makeDataSet(up: Int, color: Int): ILineDataSet {
@@ -65,7 +68,7 @@ class ImbalVM @Inject constructor(val utilsDummy: UtilsDummy) : ViewModel(),
         set.lineWidth = 1.2f
         set.circleRadius = 5f
         set.setDrawCircleHole(true)
-        set.valueTextSize = 9f
+        set.valueTextSize = 0f
         set.setDrawFilled(false)
         return set
     }
